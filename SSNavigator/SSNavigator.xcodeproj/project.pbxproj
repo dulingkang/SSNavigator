@@ -16,14 +16,25 @@
 		2A7EE6741DE2E8BB00F89483 /* NSString+SSUrlCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE6721DE2E8BB00F89483 /* NSString+SSUrlCoder.m */; };
 		2A7EE6771DE2E8D700F89483 /* NSString+SSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE6751DE2E8D700F89483 /* NSString+SSUtil.h */; };
 		2A7EE6781DE2E8D700F89483 /* NSString+SSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE6761DE2E8D700F89483 /* NSString+SSUtil.m */; };
-		2A7EE6881DE2F5CE00F89483 /* SSNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE6831DE2F5CE00F89483 /* SSNavigator.h */; };
-		2A7EE6891DE2F5CE00F89483 /* SSNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE6841DE2F5CE00F89483 /* SSNavigator.m */; };
-		2A7EE68A1DE2F5CE00F89483 /* SSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE6851DE2F5CE00F89483 /* SSPage.h */; };
-		2A7EE68B1DE2F5CF00F89483 /* SSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE6861DE2F5CE00F89483 /* SSPage.m */; };
 		2A7EE6941DE2F69C00F89483 /* SSPageAware.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE6921DE2F69C00F89483 /* SSPageAware.h */; };
 		2A7EE6951DE2F69C00F89483 /* SSPageLifeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE6931DE2F69C00F89483 /* SSPageLifeCircle.h */; };
 		2A7EE6981DE2FC1700F89483 /* SSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE6961DE2FC1700F89483 /* SSLog.h */; };
 		2A7EE6991DE2FC1700F89483 /* SSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE6971DE2FC1700F89483 /* SSLog.m */; };
+		2A7EE7111DE41E7B00F89483 /* SSObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE70F1DE41E7B00F89483 /* SSObjectCache.h */; };
+		2A7EE7121DE41E7B00F89483 /* SSObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE7101DE41E7B00F89483 /* SSObjectCache.m */; };
+		2A7EE7191DE4222E00F89483 /* SSNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE7151DE4222E00F89483 /* SSNavigator.h */; };
+		2A7EE71A1DE4222E00F89483 /* SSNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE7161DE4222E00F89483 /* SSNavigator.m */; };
+		2A7EE71B1DE4222E00F89483 /* SSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE7171DE4222E00F89483 /* SSPage.h */; };
+		2A7EE71C1DE4222E00F89483 /* SSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE7181DE4222E00F89483 /* SSPage.m */; };
+		2A7EE71E1DE4225800F89483 /* SSPageAnimate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE71D1DE4225800F89483 /* SSPageAnimate.h */; };
+		2A7EE7211DE422E200F89483 /* SSPageAnimatePushPop.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE71F1DE422E200F89483 /* SSPageAnimatePushPop.h */; };
+		2A7EE7221DE422E200F89483 /* SSPageAnimatePushPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE7201DE422E200F89483 /* SSPageAnimatePushPop.m */; };
+		2A7EE7251DE4237800F89483 /* SSPageAnimatePushLeft.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE7231DE4237800F89483 /* SSPageAnimatePushLeft.h */; };
+		2A7EE7261DE4237800F89483 /* SSPageAnimatePushLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE7241DE4237800F89483 /* SSPageAnimatePushLeft.m */; };
+		2A7EE72B1DE439C900F89483 /* SSPageAnimatePopRight.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE7291DE439C900F89483 /* SSPageAnimatePopRight.h */; };
+		2A7EE72C1DE439C900F89483 /* SSPageAnimatePopRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE72A1DE439C900F89483 /* SSPageAnimatePopRight.m */; };
+		2A7EE72F1DE43DF000F89483 /* SSPageAnimateBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE72D1DE43DF000F89483 /* SSPageAnimateBase.h */; };
+		2A7EE7301DE43DF000F89483 /* SSPageAnimateBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE72E1DE43DF000F89483 /* SSPageAnimateBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,14 +60,26 @@
 		2A7EE6721DE2E8BB00F89483 /* NSString+SSUrlCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SSUrlCoder.m"; sourceTree = "<group>"; };
 		2A7EE6751DE2E8D700F89483 /* NSString+SSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SSUtil.h"; sourceTree = "<group>"; };
 		2A7EE6761DE2E8D700F89483 /* NSString+SSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SSUtil.m"; sourceTree = "<group>"; };
-		2A7EE6831DE2F5CE00F89483 /* SSNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNavigator.h; sourceTree = "<group>"; };
-		2A7EE6841DE2F5CE00F89483 /* SSNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNavigator.m; sourceTree = "<group>"; };
-		2A7EE6851DE2F5CE00F89483 /* SSPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPage.h; sourceTree = "<group>"; };
-		2A7EE6861DE2F5CE00F89483 /* SSPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPage.m; sourceTree = "<group>"; };
 		2A7EE6921DE2F69C00F89483 /* SSPageAware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAware.h; sourceTree = "<group>"; };
 		2A7EE6931DE2F69C00F89483 /* SSPageLifeCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageLifeCircle.h; sourceTree = "<group>"; };
 		2A7EE6961DE2FC1700F89483 /* SSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLog.h; sourceTree = "<group>"; };
 		2A7EE6971DE2FC1700F89483 /* SSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLog.m; sourceTree = "<group>"; };
+		2A7EE70F1DE41E7B00F89483 /* SSObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSObjectCache.h; sourceTree = "<group>"; };
+		2A7EE7101DE41E7B00F89483 /* SSObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSObjectCache.m; sourceTree = "<group>"; };
+		2A7EE7151DE4222E00F89483 /* SSNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNavigator.h; sourceTree = "<group>"; };
+		2A7EE7161DE4222E00F89483 /* SSNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNavigator.m; sourceTree = "<group>"; };
+		2A7EE7171DE4222E00F89483 /* SSPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPage.h; sourceTree = "<group>"; };
+		2A7EE7181DE4222E00F89483 /* SSPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPage.m; sourceTree = "<group>"; };
+		2A7EE71D1DE4225800F89483 /* SSPageAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAnimate.h; sourceTree = "<group>"; };
+		2A7EE71F1DE422E200F89483 /* SSPageAnimatePushPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAnimatePushPop.h; sourceTree = "<group>"; };
+		2A7EE7201DE422E200F89483 /* SSPageAnimatePushPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPageAnimatePushPop.m; sourceTree = "<group>"; };
+		2A7EE7231DE4237800F89483 /* SSPageAnimatePushLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAnimatePushLeft.h; sourceTree = "<group>"; };
+		2A7EE7241DE4237800F89483 /* SSPageAnimatePushLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPageAnimatePushLeft.m; sourceTree = "<group>"; };
+		2A7EE7281DE4389C00F89483 /* SSWeakify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWeakify.h; sourceTree = "<group>"; };
+		2A7EE7291DE439C900F89483 /* SSPageAnimatePopRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAnimatePopRight.h; sourceTree = "<group>"; };
+		2A7EE72A1DE439C900F89483 /* SSPageAnimatePopRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPageAnimatePopRight.m; sourceTree = "<group>"; };
+		2A7EE72D1DE43DF000F89483 /* SSPageAnimateBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAnimateBase.h; sourceTree = "<group>"; };
+		2A7EE72E1DE43DF000F89483 /* SSPageAnimateBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPageAnimateBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +122,7 @@
 		2A3F212E1DE2D4E500C07740 /* SSNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				2A7EE7271DE4388B00F89483 /* Define */,
 				2A7EE6821DE2F5CE00F89483 /* Class */,
 				2A3F21461DE2D7C800C07740 /* Category */,
 				2A3F21481DE2D7C800C07740 /* Util */,
@@ -132,6 +156,8 @@
 				2A3F214A1DE2D8BB00C07740 /* SSUrlCoder.m */,
 				2A7EE6961DE2FC1700F89483 /* SSLog.h */,
 				2A7EE6971DE2FC1700F89483 /* SSLog.m */,
+				2A7EE70F1DE41E7B00F89483 /* SSObjectCache.h */,
+				2A7EE7101DE41E7B00F89483 /* SSObjectCache.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -150,11 +176,9 @@
 		2A7EE6821DE2F5CE00F89483 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				2A7EE7131DE4222E00F89483 /* Animation */,
+				2A7EE7141DE4222E00F89483 /* Main */,
 				2A7EE68D1DE2F5E600F89483 /* Protocol */,
-				2A7EE6831DE2F5CE00F89483 /* SSNavigator.h */,
-				2A7EE6841DE2F5CE00F89483 /* SSNavigator.m */,
-				2A7EE6851DE2F5CE00F89483 /* SSPage.h */,
-				2A7EE6861DE2F5CE00F89483 /* SSPage.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -168,6 +192,41 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		2A7EE7131DE4222E00F89483 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				2A7EE71D1DE4225800F89483 /* SSPageAnimate.h */,
+				2A7EE71F1DE422E200F89483 /* SSPageAnimatePushPop.h */,
+				2A7EE7201DE422E200F89483 /* SSPageAnimatePushPop.m */,
+				2A7EE7231DE4237800F89483 /* SSPageAnimatePushLeft.h */,
+				2A7EE7241DE4237800F89483 /* SSPageAnimatePushLeft.m */,
+				2A7EE7291DE439C900F89483 /* SSPageAnimatePopRight.h */,
+				2A7EE72A1DE439C900F89483 /* SSPageAnimatePopRight.m */,
+				2A7EE72D1DE43DF000F89483 /* SSPageAnimateBase.h */,
+				2A7EE72E1DE43DF000F89483 /* SSPageAnimateBase.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		2A7EE7141DE4222E00F89483 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2A7EE7151DE4222E00F89483 /* SSNavigator.h */,
+				2A7EE7161DE4222E00F89483 /* SSNavigator.m */,
+				2A7EE7171DE4222E00F89483 /* SSPage.h */,
+				2A7EE7181DE4222E00F89483 /* SSPage.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2A7EE7271DE4388B00F89483 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				2A7EE7281DE4389C00F89483 /* SSWeakify.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -176,12 +235,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7EE6981DE2FC1700F89483 /* SSLog.h in Headers */,
+				2A7EE7191DE4222E00F89483 /* SSNavigator.h in Headers */,
+				2A7EE72B1DE439C900F89483 /* SSPageAnimatePopRight.h in Headers */,
 				2A3F214B1DE2D8BB00C07740 /* SSUrlCoder.h in Headers */,
+				2A7EE72F1DE43DF000F89483 /* SSPageAnimateBase.h in Headers */,
 				2A3F213D1DE2D4E500C07740 /* SSNavigator.h in Headers */,
-				2A7EE6881DE2F5CE00F89483 /* SSNavigator.h in Headers */,
-				2A7EE68A1DE2F5CE00F89483 /* SSPage.h in Headers */,
 				2A7EE6941DE2F69C00F89483 /* SSPageAware.h in Headers */,
+				2A7EE7111DE41E7B00F89483 /* SSObjectCache.h in Headers */,
+				2A7EE71E1DE4225800F89483 /* SSPageAnimate.h in Headers */,
 				2A7EE6951DE2F69C00F89483 /* SSPageLifeCircle.h in Headers */,
+				2A7EE7251DE4237800F89483 /* SSPageAnimatePushLeft.h in Headers */,
+				2A7EE71B1DE4222E00F89483 /* SSPage.h in Headers */,
+				2A7EE7211DE422E200F89483 /* SSPageAnimatePushPop.h in Headers */,
 				2A7EE6771DE2E8D700F89483 /* NSString+SSUtil.h in Headers */,
 				2A7EE6731DE2E8BB00F89483 /* NSString+SSUrlCoder.h in Headers */,
 			);
@@ -287,10 +352,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7EE71C1DE4222E00F89483 /* SSPage.m in Sources */,
 				2A7EE6991DE2FC1700F89483 /* SSLog.m in Sources */,
+				2A7EE7261DE4237800F89483 /* SSPageAnimatePushLeft.m in Sources */,
+				2A7EE7221DE422E200F89483 /* SSPageAnimatePushPop.m in Sources */,
+				2A7EE71A1DE4222E00F89483 /* SSNavigator.m in Sources */,
 				2A7EE6781DE2E8D700F89483 /* NSString+SSUtil.m in Sources */,
-				2A7EE6891DE2F5CE00F89483 /* SSNavigator.m in Sources */,
-				2A7EE68B1DE2F5CF00F89483 /* SSPage.m in Sources */,
+				2A7EE7121DE41E7B00F89483 /* SSObjectCache.m in Sources */,
+				2A7EE7301DE43DF000F89483 /* SSPageAnimateBase.m in Sources */,
+				2A7EE72C1DE439C900F89483 /* SSPageAnimatePopRight.m in Sources */,
 				2A3F214C1DE2D8BB00C07740 /* SSUrlCoder.m in Sources */,
 				2A7EE6741DE2E8BB00F89483 /* NSString+SSUrlCoder.m in Sources */,
 			);
@@ -422,7 +492,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SSNavigator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SH.SSNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +512,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SSNavigator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SH.SSNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
