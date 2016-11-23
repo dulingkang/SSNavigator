@@ -86,7 +86,6 @@
 @property (nonatomic, strong) SSObjectCache *pageCache;
 
 @property (nonatomic) BOOL pageAnimationForward;
-@property (nonatomic, strong) id<SSPageAnimate> pageAnimation;
 @property (nonatomic, strong) SSPage *pageAnimationFrom;
 @property (nonatomic, strong) SSPage *pageAnimationTo;
 @end

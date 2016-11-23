@@ -6,16 +6,25 @@
 //  Copyright © 2016年 Shawn Du. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+
+typedef NS_ENUM(NSInteger, SSPageAnimateType) {
+    SSPageAnimatePushLeft,
+    SSPageAnimatePopRight,
+    SSPageAnimatePushTop,
+    SSPageAnimatePopBottom
+};
 
 typedef void (^VoidCallBack)();
-@protocol SSPageAnimate <NSObject>
-/*!
- *  动画实现函数
- *
- *  @param from     起点页面
- *  @param to       终点页面
- *  @param callback 动画结束时的回调
- */
--(void)animateFrom:(UIViewController *)from to:(UIViewController*)to callback:(void (^)())callback;
+
+@interface SSPageAnimate : NSObject
+@property (nonatomic) CGFloat leaveRate;
+@property (nonatomic) CGFloat alphaRate;
+@property (nonatomic) NSTimeInterval duration;
+@property (nonatomic) CAMediaTimingFunction *timeFunction;
+- (instancetype)init;
+
+- (void)animateWidthType:(SSPageAnimateType)type from:(UIViewController *)fromPage to:(UIViewController *)toPage completion:(VoidCallBack)completion;
+- (void)animateFrom:(UIViewController *)fromPage to:(UIViewController *)toPage completion:(VoidCallBack)completion;
 @end

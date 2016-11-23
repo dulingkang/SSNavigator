@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class SSPage;
 @protocol SSNavigatorDelegate <NSObject>
 @optional
 - (void)navigatorWillChangePageTo:(NSString *)url;
@@ -29,19 +30,19 @@
  *
  *  @return 栈顶页面对象
  */
--(DMPage*) topPage;
+- (SSPage*)topPage;
 
 /*!
  *  返回栈顶页面对象
  *
  *  @return 栈顶页面对象
  */
--(DMPage*) topPage:(int)deep;
+- (SSPage*)topPage:(int)deep;
 
 /*!
  * 将当期页面滚动到顶部
  */
--(void) rollup;
+- (void)rollup;
 
 
 @end
@@ -50,14 +51,14 @@
 /*!
  *  Navigator是框架页面导航的核心类型，该类型提供三个平台的版本(android,iOS,javascript)，只是语言上的差异，功能完全一致。Navigator实现了基于url控制页面跳转及页面参数传递的功能，跳转可以在Native页面和H5页面任意跳转，并维护统一的页面堆栈。
  */
-@interface DMNavigator(Navigate)
+@interface SSNavigator(Navigate)
 /*!
  *  跳转到指定的页面
  *
  *  @param url 页面资源路径
  *     可能为app，h5或者RN页面
  */
--(void) forward:(NSString*)url;
+- (void)forward:(NSString*)url;
 
 /*!
  *  跳转到指定的页面
@@ -65,8 +66,8 @@
  *  @param url      页面资源路径
  *  @param callback 页面回调接口
  */
--(void) forward:(NSString* )url
-       callback:(void(^)(NSDictionary* ))callback;
+- (void)forward:(NSString* )url
+       callback:(void(^)(NSDictionary *dict))callback;
 
 /**
  * 触发页面回退
@@ -75,30 +76,30 @@
  *     这样做的目的，是允许开发者在当前页面其他时机去主动调用callback回传数据，
  *     避免页面传参和页面回退动作绑死。
  */
--(void) backward:(NSString*)param;
+- (void)backward:(NSString *)param;
 
 
--(void) backward;
+- (void)backward;
 
 /**
  * 单独向上一个页面回传参数的接口
  * @param param 参数 （例如"param=value&param2=value2"）
  */
--(void) callback:(NSString*)param;
+- (void)callback:(NSString *)param;
 
 /*!
  *  开启一个子业务流程
  */
--(void) pushFlow;
+- (void)pushFlow;
 /*!
  *  结束当前子业务流程，同时页面跳转回之前pushFlow的地方
  */
--(void) popFlow:(NSString*)param;
+- (void)popFlow:(NSString*)param;
 @end
 
 
 
-@interface DMNavigator(Registry)
+@interface SSNavigator(Registry)
 /*!
  *  注册本地页面(不推荐使用此函数注册页面)
  *  默认情况下按照约定页面类型的名字可以作为跳转url中的页面名称，无需特别的注册。
@@ -111,7 +112,7 @@
  *             页面实现类的class属性(例如Payment如果实现类为DMPayment的话，通过[DMPayment class]来指定)
  *             页面类型需要是UIViewController或者其子类
  */
-+(void) registAppPage:(NSString*)name
++ (void)registAppPage:(NSString *)name
             pageClass:(Class)pageClass;
 
 /*!
@@ -121,5 +122,5 @@
  *  @param toUrl 目标url
  *  @param fromUrl 源url
  */
-+(void) registRedirectFromUrl:(NSString*)fromUrl toUrl:(NSString*)toUrl;
++ (void)registRedirectFromUrl:(NSString *)fromUrl toUrl:(NSString *)toUrl;
 @end
