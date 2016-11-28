@@ -10,6 +10,7 @@
 #import "SSPage.h"
 #import "SSObjectCache.h"
 #import "SSPageAnimate.h"
+#import "SSLog.h"
 
 @interface DMPageHolder : NSObject
 @property (nonatomic, strong) SSPage *pageInstance;
@@ -92,6 +93,8 @@
 
 @implementation SSNavigator
 
+SSLogDefine(SSNavigator)
+
 + (SSNavigator *)sharedInstance {
     static SSNavigator *sharedInstance = nil;
     static dispatch_once_t onceToken;
@@ -101,5 +104,26 @@
     return sharedInstance;
 }
 
+#pragma mark - getter
+- (SSObjectCache *)pageCache {
+    if (!_pageCache) {
+        _pageCache = [[SSObjectCache alloc] initWithCap:12];
+    }
+    return _pageCache;
+}
+
+- (NSMutableArray *)pageStack {
+    if (!_pageStack) {
+        _pageStack = [NSMutableArray new];
+    }
+    return _pageStack;
+}
+
+- (NSMutableArray *)pageFlowStack {
+    if (!_pageFlowStack) {
+        _pageFlowStack = [NSMutableArray new];
+    }
+    return _pageFlowStack;
+}
 
 @end
