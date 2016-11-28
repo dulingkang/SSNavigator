@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DMUrlInfo : NSObject
+@interface SSUrlInfo : NSObject
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, copy) NSString *urlOrigin;
 @property (nonatomic, copy) NSString *urlPath;
@@ -22,8 +22,8 @@
 
 @interface SSUrlCoder : NSObject
 
-+ (DMUrlInfo *)decodeUrl:(NSString *)url;
-+ (DMUrlInfo *)decodeParams:(NSString*)paramUrl;
++ (SSUrlInfo *)decodeUrl:(NSString *)url;
++ (SSUrlInfo *)decodeParams:(NSString*)paramUrl;
 
 + (NSString *)encodeParams:(NSDictionary*)param;
 @end

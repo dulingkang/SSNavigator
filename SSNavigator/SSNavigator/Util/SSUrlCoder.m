@@ -10,7 +10,7 @@
 #import "NSString+SSUrlCoder.h"
 #import "NSString+SSUtil.h"
 
-@implementation DMUrlInfo
+@implementation SSUrlInfo
 
 - (NSMutableDictionary *)params {
     if (!_params) {
@@ -36,8 +36,8 @@
 
 @implementation SSUrlCoder
 
-+ (DMUrlInfo *)decodeUrl:(NSString *)url {
-    DMUrlInfo* info = nil;
++ (SSUrlInfo *)decodeUrl:(NSString *)url {
+    SSUrlInfo* info = nil;
     if (!url) {
         return info;
     }
@@ -49,7 +49,7 @@
         info                = [self decodeParams:paramUrl];
         info.urlPath        = [url substringToIndex:stub.location];
     } else {
-        info            = [[DMUrlInfo alloc] init];
+        info            = [[SSUrlInfo alloc] init];
         info.urlPath    = url;
     }
     info.urlOrigin = url;
@@ -82,12 +82,12 @@
     return info;
 }
 
-+ (DMUrlInfo *)decodeParams:(NSString*)paramUrl {
++ (SSUrlInfo *)decodeParams:(NSString*)paramUrl {
     if([paramUrl ssIsEmpty]) {
         return nil;
     }
     
-    DMUrlInfo* info = [[DMUrlInfo alloc] init];
+    SSUrlInfo* info = [[SSUrlInfo alloc] init];
     paramUrl        = [paramUrl ssTrim];
     info.urlOrigin  = paramUrl;
     info.url        = paramUrl;

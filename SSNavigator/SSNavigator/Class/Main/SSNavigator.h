@@ -20,17 +20,11 @@
 
 @interface SSNavigator : UIViewController
 @property (nonatomic, weak) id<SSNavigatorDelegate> delegate;
+@property (nonatomic, strong) SSPage *topPage; //栈顶页面对象
 - (instancetype)init;
 - (instancetype)initWithUrl:(NSString*)url;
 
 + (SSNavigator *)sharedInstance;
-
-/*!
- *  返回栈顶页面对象
- *
- *  @return 栈顶页面对象
- */
-- (SSPage*)topPage;
 
 /*!
  *  返回栈顶页面对象
@@ -58,7 +52,7 @@
  *  @param url 页面资源路径
  *     可能为app，h5或者RN页面
  */
-- (void)forward:(NSString*)url;
+- (void)forward:(NSString *)url;
 
 /*!
  *  跳转到指定的页面
@@ -66,8 +60,7 @@
  *  @param url      页面资源路径
  *  @param callback 页面回调接口
  */
-- (void)forward:(NSString* )url
-       callback:(void(^)(NSDictionary *dict))callback;
+- (void)forward:(NSString *)url callback:(void(^)(NSDictionary *dict))callback;
 
 /**
  * 触发页面回退
