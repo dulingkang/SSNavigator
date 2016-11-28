@@ -11,7 +11,7 @@
 
 @implementation SSBridgeObject
 
--(NSString*)javascriptObjectName {
+- (NSString *)javascriptObjectName {
     return @"window.bridge";
 }
 @end
