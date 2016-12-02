@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^SSDictCallBack)(NSDictionary *dict);
 @class SSPage;
 @protocol SSNavigatorDelegate <NSObject>
 @optional
@@ -21,9 +22,6 @@
 @interface SSNavigator : UIViewController
 @property (nonatomic, weak) id<SSNavigatorDelegate> delegate;
 @property (nonatomic, strong) SSPage *topPage; //栈顶页面对象
-- (instancetype)init;
-- (instancetype)initWithUrl:(NSString*)url;
-
 + (SSNavigator *)sharedInstance;
 
 /*!
@@ -60,7 +58,7 @@
  *  @param url      页面资源路径
  *  @param callback 页面回调接口
  */
-- (void)forward:(NSString *)url callback:(void(^)(NSDictionary *dict))callback;
+- (void)forward:(NSString *)url callback:(SSDictCallBack)callback;
 
 /**
  * 触发页面回退

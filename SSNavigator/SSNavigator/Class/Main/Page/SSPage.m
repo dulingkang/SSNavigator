@@ -8,6 +8,7 @@
 
 #import "SSPage.h"
 #import "SSLog.h"
+#import "NSString+SSUtil.h"
 
 
 @interface SSPage ()
@@ -16,73 +17,16 @@
 
 @implementation SSPage
 
+@synthesize navigator;
+@synthesize pageCallback;
+@synthesize pageParams;
+@synthesize frameworkParams;
+@synthesize pageUrl;
+@synthesize pageName;
+
 SSLogDefine(SSPage)
 
 #pragma mark - life cycle
--(void)pageInit {
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
--(void)pageDestroy {
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
-/*!
- *  当页面即将向前切换到当前页面时调用
- */
--(void)pageWillForwardToMe {
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
-/*!
- *  当页面已经向前切换到当前页面时调用
- */
--(void)pageDidForwardToMe{
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
-/*!
- *  当页面即将向前离开当前页面时调用
- */
--(void)pageWillForwardFromMe{
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
-/*!
- *  当页面已经向前切换离开当前页面时调用
- */
--(void)pageDidForwardFromMe{
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
-/*!
- *  当页面即将向后回退到当前页面时调用
- */
--(void)pageWillBackwardToMe{
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
-/*!
- *  当页面已经向后回退到当前页面时调用
- */
--(void)pageDidBackwardToMe{
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
-/*!
- *  当页面即将后退离开当前页面时调用
- */
--(void)pageWillBackwardFromMe{
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
-/*!
- *  当页面已经后退离开当前页面时调用
- */
--(void)pageDidBackwardFromMe{
-    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
-}
-
 /*!
  *  当页面即将展示时调用(包含页面前进和回退)
  */
@@ -113,6 +57,9 @@ SSLogDefine(SSPage)
 
 #pragma mark - public method
 -(void)forward:(NSString *)url {
+    if (self != self.navigator.topPage) {
+        
+    }
 }
 
 -(void)forward:(NSString *)url callback:(void(^)(NSDictionary *dict))callback {
@@ -131,6 +78,28 @@ SSLogDefine(SSPage)
 }
 
 -(void)popFlow:(NSString *)param {
+}
+
+- (void)warePageParam:(NSString*)value byKey:(NSString*)key {
+    NSString* setterName = [NSString stringWithFormat:@"set%@:", [key ssFirstToUpper]];
+    SEL setterMethod = NSSelectorFromString(setterName);
+    if([self respondsToSelector:setterMethod]) {
+        NSMethodSignature* methodSign = [[self class] instanceMethodSignatureForSelector:setterMethod];
+        const char * argType = [methodSign getArgumentTypeAtIndex:2];
+        SSDebug(@"autoware param key:%@ value:%@ type:%s",key,value,argType);
+        NSNumber *number = [value numberFromStringSignature:argType];
+        if (number) {
+            [self setValue:number forKey:key];
+        } else {
+            [self setValue:value forKey:key];
+        }
+    } else {
+        SSDebug(@"skip param key:%@ value:%@",key,value);
+    }
+}
+
+-(void)pageRollup {
+    SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
 }
 
 @end

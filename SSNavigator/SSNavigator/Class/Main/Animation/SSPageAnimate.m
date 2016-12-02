@@ -8,8 +8,10 @@
 
 #import "SSPageAnimate.h"
 #import "SSWeakify.h"
+#import "SSMagicCell.h"
+#import "SSMagicMoveSet.h"
 
-@interface SSPageAnimate()
+@interface SSPageAnimate()<CAAnimationDelegate>
 @property (nonatomic, copy) VoidCallBack callback;
 @property (nonatomic, copy) VoidCallBack originCallback;
 @end
@@ -27,6 +29,10 @@
 
 #pragma mark - public method
 - (void)animateWidthType:(SSPageAnimateType)type from:(UIViewController *)fromPage to:(UIViewController *)toPage completion:(VoidCallBack)completion {
+    if (type == SSPageAnimateMagicMove) {
+        [self magicMoveFrom:fromPage to:toPage completion:completion];
+        return ;
+    }
     NSString *animationKey = @"pushAnimation";
     self.originCallback = completion;
     
@@ -79,6 +85,8 @@
         @strongify_self
         @strongify(from)
         @strongify(to)
+        from.userInteractionEnabled = true;
+        from.userInteractionEnabled = true;
         if (self.originCallback) {
             self.originCallback();
         }
@@ -88,19 +96,24 @@
         strong_from.frame = fromViewEndFrame;
     };
     
-    @weakify(mask)
     [UIView animateWithDuration:self.duration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        @strongify(mask)
-        strong_mask.alpha = self.alphaRate;
+        mask.alpha = self.alphaRate;
     } completion:^(BOOL finished) {
-        @strongify(mask)
-        [strong_mask removeFromSuperview];
+        [mask removeFromSuperview];
     }];
 
 }
 
 - (void)animateFrom:(UIViewController *)fromPage to:(UIViewController *)toPage completion:(VoidCallBack)completion {
     [self animateWidthType:SSPageAnimatePushLeft from:fromPage to:toPage completion:completion];
+}
+
+#pragma mark - delegate
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    if (self.callback) {
+        self.callback();
+    }
+    self.callback = nil;
 }
 
 #pragma mark - private method
@@ -115,5 +128,95 @@
     fromAnimation.fillMode = kCAFillModeForwards;
     fromAnimation.removedOnCompletion = NO;
     [view.layer addAnimation:fromAnimation forKey:animationKey];
+}
+
+- (void)magicMoveFrom:(UIViewController *)from to:(UIViewController *)to completion:(VoidCallBack)completion {
+    from.view.layer.opacity = 1;
+    to.view.layer.opacity = 0;
+    
+    NSMutableDictionary* magicCells = [[NSMutableDictionary alloc] init];
+    
+    NSDictionary* fromMagicSet = nil;
+    NSDictionary* toMagicSet = nil;
+    if ([from respondsToSelector:@selector(magicMoveSet)]) {
+        fromMagicSet = [((id<SSMagicMoveSet>)from) magicMoveSet];
+    }
+    if ([to respondsToSelector:@selector(magicMoveSet)]) {
+        toMagicSet = [((id<SSMagicMoveSet>)to) magicMoveSet];
+    }
+    for (NSString* key in fromMagicSet) {
+        id fromView = [fromMagicSet objectForKey:key];
+        id toView = [toMagicSet objectForKey:key];
+        if (fromView != nil && toView != nil) {
+            SSMagicCell* cell = [[SSMagicCell alloc] init];
+            cell.fromView = fromView;
+            cell.toView = toView;
+            cell.fromViewBegin = [cell getFromView].frame;
+            cell.fromViewEnd = [[cell getFromView].superview convertRect:[cell getToView].frame fromView:[cell getToView].superview];
+            cell.toViewBegin = [[cell getToView].superview convertRect:[cell getFromView].frame fromView:[cell getFromView].superview];
+            cell.toViewEnd = [cell getToView].frame;
+            [magicCells setObject:cell forKey:key];
+        }
+    }
+    
+    // 设置开始
+    for(NSString* key in magicCells) {
+        SSMagicCell* cell = [magicCells objectForKey:key];
+        if (cell != nil) {
+            [cell getToView].frame = cell.toViewBegin;
+            if ([cell needRotateByX]) {
+                [cell getToView].layer.transform = CATransform3DRotate(CATransform3DIdentity, -1*M_PI, 1, 0, 0) ;
+                [cell getFromView].layer.transform = CATransform3DRotate(CATransform3DIdentity, 0, 1, 0, 0) ;
+            }
+            if ([cell needRotateByY]) {
+                [cell getToView].layer.transform = CATransform3DRotate(CATransform3DIdentity, -1*M_PI, 0, 1, 0) ;
+                [cell getFromView].layer.transform = CATransform3DRotate(CATransform3DIdentity, 0, 0, 1, 0) ;
+            }
+        }
+    }
+    
+    [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        //  @strongify(magicCells)
+        from.view.layer.opacity = 0;
+        to.view.layer.opacity = 1;
+        
+        // 设置结束
+        for(NSString* key in magicCells) {
+            SSMagicCell* cell = [magicCells objectForKey:key];
+            if (cell != nil) {
+                [cell getFromView].frame = cell.fromViewEnd;
+                [cell getToView].frame = cell.toViewEnd;
+                
+                if ([cell needRotateByX]) {
+                    [cell getToView].layer.transform = CATransform3DRotate(CATransform3DIdentity, 0, 1, 0, 0) ;
+                    [cell getFromView].layer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI, 1, 0, 0) ;
+                }
+                if ([cell needRotateByY]) {
+                    [cell getToView].layer.transform = CATransform3DRotate(CATransform3DIdentity, 0, 0, 1, 0) ;
+                    [cell getFromView].layer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI, 0, 1, 0) ;
+                }
+            }
+        }
+        
+    } completion:^(BOOL finished) {
+        from.view.layer.opacity = 1;
+        to.view.layer.opacity = 1;
+        from.view.userInteractionEnabled = true;
+        from.view.userInteractionEnabled = true;
+        // 设置from
+        for(NSString* key in magicCells) {
+            SSMagicCell* cell = [magicCells objectForKey:key];
+            if (cell != nil) {
+                [cell getFromView].frame = cell.fromViewBegin;
+                [cell getToView].frame = cell.toViewEnd;
+                
+                [cell getFromView].layer.transform = CATransform3DIdentity;
+                [cell getToView].layer.transform = CATransform3DIdentity;
+            }
+        }
+        if (completion) {
+            completion();
+        }
+    }];
 }
 @end

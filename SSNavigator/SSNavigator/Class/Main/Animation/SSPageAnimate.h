@@ -13,7 +13,10 @@ typedef NS_ENUM(NSInteger, SSPageAnimateType) {
     SSPageAnimatePushLeft,
     SSPageAnimatePopRight,
     SSPageAnimatePushTop,
-    SSPageAnimatePopBottom
+    SSPageAnimatePopBottom,
+    SSPageAnimateMagicMove,
+    SSPageAnimateNone,
+    SSPageAnimateUnknown
 };
 
 typedef void (^VoidCallBack)();

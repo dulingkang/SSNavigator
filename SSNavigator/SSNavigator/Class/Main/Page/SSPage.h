@@ -26,4 +26,7 @@
 -(void)callback:(NSString *)param;
 -(void)pushFlow;
 -(void)popFlow:(NSString *)param;
+
+-(void)warePageParam:(NSString*)value byKey:(NSString*)key;
+-(void)pageRollup;
 @end

@@ -13,4 +13,5 @@
 - (NSString *)ssTrim;
 - (BOOL)ssIsEmpty;
 - (NSString *)ssFirstToUpper;
+- (NSNumber *)numberFromStringSignature:(const char *)type;
 @end

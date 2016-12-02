@@ -12,7 +12,7 @@
 
 @protocol SSPageAware <NSObject>
 
-@property (nonatomic, weak) SSNavigator *navitator;
+@property (nonatomic, weak) SSNavigator *navigator;
 
 /*!
  *  页面参数
@@ -30,6 +30,7 @@
 @property (nonatomic, copy) NSString *pageUrl;
 
 @property (nonatomic, copy) NSString *pageName;
+@property (nonatomic) BOOL needPopflow;
 
 /*!
  *  向上一个页面回传数据的接口

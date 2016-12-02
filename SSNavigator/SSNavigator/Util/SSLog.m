@@ -117,11 +117,11 @@ NSString* DMLog_msgFilter = nil;
         }
     }
     
-    NSLog(@"\033[fg65,105,225;[%@ %@]\033[; \033[fg%@; %@ \033[;\n",name,[SSLog levelToString:level],[SSLog colorForLevel:level],msg);
+    NSLog(@"✈️\033[fg65,105,225;[%@ %@]\033[; \033[fg%@; %@ \033[;\n",name,[SSLog levelToString:level],[SSLog colorForLevel:level],msg);
     
     if(level >= SSLogLevelWarn) {
         NSString* callstack = [[NSThread callStackSymbols] description];
-        NSLog(@"\033[fg%@;%@\033[;\n",[SSLog colorForLevel:level],callstack);
+        NSLog(@"🚀\033[fg%@;%@\033[;\n",[SSLog colorForLevel:level],callstack);
     }
 }
 

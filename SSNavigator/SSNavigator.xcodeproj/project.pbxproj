@@ -33,6 +33,14 @@
 		2A7EE7121DE41E7B00F89483 /* SSObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE7101DE41E7B00F89483 /* SSObjectCache.m */; };
 		2A7EE7191DE4222E00F89483 /* SSNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7EE7151DE4222E00F89483 /* SSNavigator.h */; };
 		2A7EE71A1DE4222E00F89483 /* SSNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE7161DE4222E00F89483 /* SSNavigator.m */; };
+		2ACABE2C1DF10E6B00C173CC /* SSJSPageBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ACABE2A1DF10E6B00C173CC /* SSJSPageBridge.h */; };
+		2ACABE2D1DF10E6B00C173CC /* SSJSPageBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACABE2B1DF10E6B00C173CC /* SSJSPageBridge.m */; };
+		2ACABE2F1DF1117C00C173CC /* SSEvaluateScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ACABE2E1DF1117C00C173CC /* SSEvaluateScript.h */; };
+		2ACABE311DF11DC700C173CC /* SSMagicMoveSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ACABE301DF11DC700C173CC /* SSMagicMoveSet.h */; };
+		2ACABE341DF11E0F00C173CC /* SSMagicMoveCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ACABE321DF11E0F00C173CC /* SSMagicMoveCell.h */; };
+		2ACABE351DF11E0F00C173CC /* SSMagicMoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACABE331DF11E0F00C173CC /* SSMagicMoveCell.m */; };
+		2ACABE381DF11EE300C173CC /* SSMagicCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ACABE361DF11EE300C173CC /* SSMagicCell.h */; };
+		2ACABE391DF11EE300C173CC /* SSMagicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACABE371DF11EE300C173CC /* SSMagicCell.m */; };
 		3AF44FC31DEC6BE500E5DB8D /* SSBridgeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF44FC11DEC6BE500E5DB8D /* SSBridgeHelper.h */; };
 		3AF44FC41DEC6BE500E5DB8D /* SSBridgeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF44FC21DEC6BE500E5DB8D /* SSBridgeHelper.m */; };
 /* End PBXBuildFile section */
@@ -78,6 +86,14 @@
 		2A7EE7151DE4222E00F89483 /* SSNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNavigator.h; sourceTree = "<group>"; };
 		2A7EE7161DE4222E00F89483 /* SSNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNavigator.m; sourceTree = "<group>"; };
 		2A7EE7281DE4389C00F89483 /* SSWeakify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWeakify.h; sourceTree = "<group>"; };
+		2ACABE2A1DF10E6B00C173CC /* SSJSPageBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJSPageBridge.h; sourceTree = "<group>"; };
+		2ACABE2B1DF10E6B00C173CC /* SSJSPageBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSPageBridge.m; sourceTree = "<group>"; };
+		2ACABE2E1DF1117C00C173CC /* SSEvaluateScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEvaluateScript.h; sourceTree = "<group>"; };
+		2ACABE301DF11DC700C173CC /* SSMagicMoveSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMagicMoveSet.h; sourceTree = "<group>"; };
+		2ACABE321DF11E0F00C173CC /* SSMagicMoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMagicMoveCell.h; sourceTree = "<group>"; };
+		2ACABE331DF11E0F00C173CC /* SSMagicMoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMagicMoveCell.m; sourceTree = "<group>"; };
+		2ACABE361DF11EE300C173CC /* SSMagicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMagicCell.h; sourceTree = "<group>"; };
+		2ACABE371DF11EE300C173CC /* SSMagicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMagicCell.m; sourceTree = "<group>"; };
 		3AF44FC11DEC6BE500E5DB8D /* SSBridgeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBridgeHelper.h; sourceTree = "<group>"; };
 		3AF44FC21DEC6BE500E5DB8D /* SSBridgeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBridgeHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +133,10 @@
 			children = (
 				2A2FE3441DEC45E400D3B2AE /* SSPageAnimate.h */,
 				2A2FE3451DEC45E400D3B2AE /* SSPageAnimate.m */,
+				2ACABE321DF11E0F00C173CC /* SSMagicMoveCell.h */,
+				2ACABE331DF11E0F00C173CC /* SSMagicMoveCell.m */,
+				2ACABE361DF11EE300C173CC /* SSMagicCell.h */,
+				2ACABE371DF11EE300C173CC /* SSMagicCell.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -128,6 +148,8 @@
 				2A2FE34C1DEC471F00D3B2AE /* SSBridgeObject.m */,
 				3AF44FC11DEC6BE500E5DB8D /* SSBridgeHelper.h */,
 				3AF44FC21DEC6BE500E5DB8D /* SSBridgeHelper.m */,
+				2ACABE2A1DF10E6B00C173CC /* SSJSPageBridge.h */,
+				2ACABE2B1DF10E6B00C173CC /* SSJSPageBridge.m */,
 			);
 			path = JSBridge;
 			sourceTree = "<group>";
@@ -219,6 +241,8 @@
 				2A7EE6921DE2F69C00F89483 /* SSPageAware.h */,
 				2A7EE6931DE2F69C00F89483 /* SSPageLifeCircle.h */,
 				2A2FE3491DEC46B300D3B2AE /* SSBridgeProtocol.h */,
+				2ACABE2E1DF1117C00C173CC /* SSEvaluateScript.h */,
+				2ACABE301DF11DC700C173CC /* SSMagicMoveSet.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -253,7 +277,10 @@
 				2A2FE3461DEC45E400D3B2AE /* SSPageAnimate.h in Headers */,
 				2A2FE34A1DEC46B300D3B2AE /* SSBridgeProtocol.h in Headers */,
 				2A7EE6981DE2FC1700F89483 /* SSLog.h in Headers */,
+				2ACABE2C1DF10E6B00C173CC /* SSJSPageBridge.h in Headers */,
+				2ACABE2F1DF1117C00C173CC /* SSEvaluateScript.h in Headers */,
 				2A7EE7191DE4222E00F89483 /* SSNavigator.h in Headers */,
+				2ACABE381DF11EE300C173CC /* SSMagicCell.h in Headers */,
 				2A3F214B1DE2D8BB00C07740 /* SSUrlCoder.h in Headers */,
 				2A3F213D1DE2D4E500C07740 /* SSNavigator.h in Headers */,
 				2A7EE6941DE2F69C00F89483 /* SSPageAware.h in Headers */,
@@ -261,9 +288,11 @@
 				2A7EE7111DE41E7B00F89483 /* SSObjectCache.h in Headers */,
 				2A7EE6951DE2F69C00F89483 /* SSPageLifeCircle.h in Headers */,
 				2A2FE34D1DEC471F00D3B2AE /* SSBridgeObject.h in Headers */,
+				2ACABE341DF11E0F00C173CC /* SSMagicMoveCell.h in Headers */,
 				2A2FE33D1DEC3CB100D3B2AE /* SSPage.h in Headers */,
 				3AF44FC31DEC6BE500E5DB8D /* SSBridgeHelper.h in Headers */,
 				2A7EE6771DE2E8D700F89483 /* NSString+SSUtil.h in Headers */,
+				2ACABE311DF11DC700C173CC /* SSMagicMoveSet.h in Headers */,
 				2A7EE6731DE2E8BB00F89483 /* NSString+SSUrlCoder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,11 +397,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACABE2D1DF10E6B00C173CC /* SSJSPageBridge.m in Sources */,
 				2A2FE33E1DEC3CB100D3B2AE /* SSPage.m in Sources */,
 				2A7EE6991DE2FC1700F89483 /* SSLog.m in Sources */,
+				2ACABE391DF11EE300C173CC /* SSMagicCell.m in Sources */,
 				2A7EE71A1DE4222E00F89483 /* SSNavigator.m in Sources */,
 				2A2FE34E1DEC471F00D3B2AE /* SSBridgeObject.m in Sources */,
 				2A2FE3421DEC3CD600D3B2AE /* SSWebPage.m in Sources */,
+				2ACABE351DF11E0F00C173CC /* SSMagicMoveCell.m in Sources */,
 				3AF44FC41DEC6BE500E5DB8D /* SSBridgeHelper.m in Sources */,
 				2A2FE3471DEC45E400D3B2AE /* SSPageAnimate.m in Sources */,
 				2A7EE6781DE2E8D700F89483 /* NSString+SSUtil.m in Sources */,

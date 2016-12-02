@@ -35,4 +35,52 @@
     }
 }
 
+- (NSNumber *)numberFromStringSignature:(const char *)type {
+    if (strcmp(type, "c") == 0) {
+        char v = 0;
+        if ([self hasPrefix:@"'"] && [self hasSuffix:@"'"] && self.length == 3) {
+            v = [self characterAtIndex:1];
+        } else {
+            v = [self intValue];
+        }
+        if ([@"true" isEqualToString:self] || [@"YES" isEqualToString:self]) {
+            v = 1;
+        }
+        if ([@"false" isEqualToString:self] || [@"NO" isEqualToString:self]) {
+            v = 0;
+        }
+        return [NSNumber numberWithChar:v];
+    }
+    if (strcmp(type, "i") == 0) {
+        return @([self intValue]);
+    }
+    if (strcmp(type, "I") == 0) {
+        return @((unsigned int)[self intValue]);
+    }
+    if (strcmp(type, "s") == 0) {
+        return @([self intValue]);
+    }
+    if (strcmp(type, "S") == 0) {
+        return @([self intValue]);
+    }
+    if (strcmp(type, "l") == 0) {
+        return @([self longLongValue]);
+    }
+    if (strcmp(type, "L") == 0) {
+        return @([self longLongValue]);
+    }
+    if (strcmp(type, "f") == 0) {
+        return @([self floatValue]);
+    }
+    if (strcmp(type, "d") == 0) {
+        return @([self doubleValue]);
+    }
+    if (strcmp(type, "B") == 0) {
+        return @([self boolValue]);
+    }
+    if (strcmp(type, "q") == 0) {
+        return @([self longLongValue]);
+    }
+    return nil;
+}
 @end
