@@ -1,0 +1,24 @@
+PODS:
+  - SSNavigatorFramework (1.0.0):
+    - SSNavigatorFramework/Animation (= 1.0.0)
+    - SSNavigatorFramework/Core (= 1.0.0)
+    - SSNavigatorFramework/JSBridge (= 1.0.0)
+    - SSNavigatorFramework/NSStringCategory (= 1.0.0)
+    - SSNavigatorFramework/Protocol (= 1.0.0)
+  - SSNavigatorFramework/Animation (1.0.0)
+  - SSNavigatorFramework/Core (1.0.0)
+  - SSNavigatorFramework/JSBridge (1.0.0)
+  - SSNavigatorFramework/NSStringCategory (1.0.0)
+  - SSNavigatorFramework/Protocol (1.0.0)
+
+DEPENDENCIES:
+  - SSNavigatorFramework (from `../`)
+
+EXTERNAL SOURCES:
+  SSNavigatorFramework:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SSNavigatorFramework: ea6248609f7995730912941781996aa53b42769b
+
+COCOAPODS: 0.39.0
