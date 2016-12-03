@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SSNavigator.xcodeproj">
+      location = "self:SSNavigatorFramework.xcodeproj">
    </FileRef>
 </Workspace>

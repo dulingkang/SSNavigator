@@ -1,20 +1,20 @@
 //
-//  SSNavigatorTests.m
-//  SSNavigatorTests
+//  SSNavigatorFrameworkTests.m
+//  SSNavigatorFrameworkTests
 //
-//  Created by ShawnDu on 2016/11/21.
-//  Copyright © 2016年 Shawn Du. All rights reserved.
+//  Created by dulingkang on 2016/12/3.
+//  Copyright © 2016年 com.shawn. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import "NSString+SSUrlCoder.h"
 #import "NSString+SSUtil.h"
 
-@interface SSNavigatorTests : XCTestCase
+@interface SSNavigatorFrameworkTests : XCTestCase
 
 @end
 
-@implementation SSNavigatorTests
+@implementation SSNavigatorFrameworkTests
 
 - (void)setUp {
     [super setUp];

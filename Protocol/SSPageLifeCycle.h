@@ -1,5 +1,5 @@
 //
-//  SSPageLifeCircle.h
+//  SSPageLifeCycle.h
 //  SSNavigator
 //
 //  Created by ShawnDu on 2016/11/21.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol SSPageLifeCircle <NSObject>
+@protocol SSPageLifeCycle <NSObject>
 @optional
 /*!
  *  当页面即将展示时调用(包含页面前进和回退)

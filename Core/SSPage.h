@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SSPageLifeCircle.h"
+#import "SSPageLifeCycle.h"
 #import "SSPageAware.h"
 #import "SSMagicMoveSet.h"
 #import "SSNavigator.h"
 
-@interface SSPage : UIViewController<SSPageAware, SSPageLifeCircle, SSMagicMoveSet>
+@interface SSPage : UIViewController<SSPageAware, SSPageLifeCycle, SSMagicMoveSet>
 -(void)forward:(NSString *)url;
 -(void)forward:(NSString *)url callback:(SSDictCallBack)callback;
 -(void)backward;
