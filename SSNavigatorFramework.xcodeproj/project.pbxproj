@@ -9,42 +9,43 @@
 /* Begin PBXBuildFile section */
 		3AF450781DF2ECEF00E5DB8D /* SSNavigatorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF4506E1DF2ECEE00E5DB8D /* SSNavigatorFramework.framework */; };
 		3AF4507D1DF2ECEF00E5DB8D /* SSNavigatorFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4507C1DF2ECEF00E5DB8D /* SSNavigatorFrameworkTests.m */; };
-		3AF451061DF2F4BB00E5DB8D /* SSMagicCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450DD1DF2F4BB00E5DB8D /* SSMagicCell.h */; };
-		3AF451071DF2F4BB00E5DB8D /* SSMagicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450DE1DF2F4BB00E5DB8D /* SSMagicCell.m */; };
-		3AF451081DF2F4BB00E5DB8D /* SSMagicMoveCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450DF1DF2F4BB00E5DB8D /* SSMagicMoveCell.h */; };
-		3AF451091DF2F4BB00E5DB8D /* SSMagicMoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450E01DF2F4BB00E5DB8D /* SSMagicMoveCell.m */; };
-		3AF4510A1DF2F4BB00E5DB8D /* SSPageAnimate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450E11DF2F4BB00E5DB8D /* SSPageAnimate.h */; };
-		3AF4510B1DF2F4BB00E5DB8D /* SSPageAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450E21DF2F4BB00E5DB8D /* SSPageAnimate.m */; };
-		3AF4510C1DF2F4BB00E5DB8D /* SSNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450E41DF2F4BB00E5DB8D /* SSNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF4510D1DF2F4BB00E5DB8D /* SSNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450E51DF2F4BB00E5DB8D /* SSNavigator.m */; };
-		3AF4510E1DF2F4BB00E5DB8D /* SSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450E61DF2F4BB00E5DB8D /* SSPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF4510F1DF2F4BB00E5DB8D /* SSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450E71DF2F4BB00E5DB8D /* SSPage.m */; };
-		3AF451101DF2F4BB00E5DB8D /* SSWeakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450E81DF2F4BB00E5DB8D /* SSWeakify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF451111DF2F4BB00E5DB8D /* SSWebPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450E91DF2F4BB00E5DB8D /* SSWebPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF451121DF2F4BB00E5DB8D /* SSWebPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450EA1DF2F4BB00E5DB8D /* SSWebPage.m */; };
-		3AF451131DF2F4BB00E5DB8D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AF450EB1DF2F4BB00E5DB8D /* Info.plist */; };
-		3AF451141DF2F4BB00E5DB8D /* SSBridgeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450ED1DF2F4BB00E5DB8D /* SSBridgeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF451151DF2F4BB00E5DB8D /* SSBridgeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450EE1DF2F4BB00E5DB8D /* SSBridgeHelper.m */; };
-		3AF451161DF2F4BB00E5DB8D /* SSBridgeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450EF1DF2F4BB00E5DB8D /* SSBridgeObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF451171DF2F4BB00E5DB8D /* SSBridgeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450F01DF2F4BB00E5DB8D /* SSBridgeObject.m */; };
-		3AF451181DF2F4BB00E5DB8D /* SSJSPageBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450F11DF2F4BB00E5DB8D /* SSJSPageBridge.h */; };
-		3AF451191DF2F4BB00E5DB8D /* SSJSPageBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450F21DF2F4BB00E5DB8D /* SSJSPageBridge.m */; };
-		3AF4511A1DF2F4BB00E5DB8D /* NSString+SSUrlCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450F41DF2F4BB00E5DB8D /* NSString+SSUrlCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF4511B1DF2F4BB00E5DB8D /* NSString+SSUrlCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450F51DF2F4BB00E5DB8D /* NSString+SSUrlCoder.m */; };
-		3AF4511C1DF2F4BB00E5DB8D /* NSString+SSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450F61DF2F4BB00E5DB8D /* NSString+SSUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF4511D1DF2F4BB00E5DB8D /* NSString+SSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF450F71DF2F4BB00E5DB8D /* NSString+SSUtil.m */; };
-		3AF4511E1DF2F4BB00E5DB8D /* SSBridgeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450F91DF2F4BB00E5DB8D /* SSBridgeProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF4511F1DF2F4BB00E5DB8D /* SSEvaluateScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450FA1DF2F4BB00E5DB8D /* SSEvaluateScript.h */; };
-		3AF451201DF2F4BB00E5DB8D /* SSMagicMoveSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450FB1DF2F4BB00E5DB8D /* SSMagicMoveSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF451211DF2F4BB00E5DB8D /* SSPageAware.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450FC1DF2F4BB00E5DB8D /* SSPageAware.h */; };
-		3AF451221DF2F4BB00E5DB8D /* SSPageLifeCycle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450FD1DF2F4BB00E5DB8D /* SSPageLifeCycle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF451231DF2F4BB00E5DB8D /* SSNavigatorFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF450FE1DF2F4BB00E5DB8D /* SSNavigatorFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF451241DF2F4BB00E5DB8D /* SSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451001DF2F4BB00E5DB8D /* SSLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF451251DF2F4BB00E5DB8D /* SSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451011DF2F4BB00E5DB8D /* SSLog.m */; };
-		3AF451261DF2F4BB00E5DB8D /* SSObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451021DF2F4BB00E5DB8D /* SSObjectCache.h */; };
-		3AF451271DF2F4BB00E5DB8D /* SSObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451031DF2F4BB00E5DB8D /* SSObjectCache.m */; };
-		3AF451281DF2F4BB00E5DB8D /* SSUrlCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451041DF2F4BB00E5DB8D /* SSUrlCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AF451291DF2F4BB00E5DB8D /* SSUrlCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451051DF2F4BB00E5DB8D /* SSUrlCoder.m */; };
+		3AF452151DF3179D00E5DB8D /* SSMagicCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451EE1DF3179D00E5DB8D /* SSMagicCell.h */; };
+		3AF452161DF3179D00E5DB8D /* SSMagicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451EF1DF3179D00E5DB8D /* SSMagicCell.m */; };
+		3AF452171DF3179D00E5DB8D /* SSMagicMoveCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451F01DF3179D00E5DB8D /* SSMagicMoveCell.h */; };
+		3AF452181DF3179D00E5DB8D /* SSMagicMoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451F11DF3179D00E5DB8D /* SSMagicMoveCell.m */; };
+		3AF452191DF3179D00E5DB8D /* SSPageAnimate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451F21DF3179D00E5DB8D /* SSPageAnimate.h */; };
+		3AF4521A1DF3179D00E5DB8D /* SSPageAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451F31DF3179D00E5DB8D /* SSPageAnimate.m */; };
+		3AF4521B1DF3179D00E5DB8D /* SSNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451F51DF3179D00E5DB8D /* SSNavigator.h */; };
+		3AF4521C1DF3179D00E5DB8D /* SSNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451F61DF3179D00E5DB8D /* SSNavigator.m */; };
+		3AF4521D1DF3179D00E5DB8D /* SSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451F71DF3179D00E5DB8D /* SSPage.h */; };
+		3AF4521E1DF3179D00E5DB8D /* SSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451F81DF3179D00E5DB8D /* SSPage.m */; };
+		3AF4521F1DF3179D00E5DB8D /* SSWeakify.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451F91DF3179D00E5DB8D /* SSWeakify.h */; };
+		3AF452201DF3179D00E5DB8D /* SSWebPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451FA1DF3179D00E5DB8D /* SSWebPage.h */; };
+		3AF452211DF3179D00E5DB8D /* SSWebPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451FB1DF3179D00E5DB8D /* SSWebPage.m */; };
+		3AF452221DF3179D00E5DB8D /* SSBridgeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451FD1DF3179D00E5DB8D /* SSBridgeHelper.h */; };
+		3AF452231DF3179D00E5DB8D /* SSBridgeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF451FE1DF3179D00E5DB8D /* SSBridgeHelper.m */; };
+		3AF452241DF3179D00E5DB8D /* SSBridgeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF451FF1DF3179D00E5DB8D /* SSBridgeObject.h */; };
+		3AF452251DF3179D00E5DB8D /* SSBridgeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF452001DF3179D00E5DB8D /* SSBridgeObject.m */; };
+		3AF452261DF3179D00E5DB8D /* SSJSPageBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF452011DF3179D00E5DB8D /* SSJSPageBridge.h */; };
+		3AF452271DF3179D00E5DB8D /* SSJSPageBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF452021DF3179D00E5DB8D /* SSJSPageBridge.m */; };
+		3AF452281DF3179D00E5DB8D /* NSString+SSUrlCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF452041DF3179D00E5DB8D /* NSString+SSUrlCoder.h */; };
+		3AF452291DF3179D00E5DB8D /* NSString+SSUrlCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF452051DF3179D00E5DB8D /* NSString+SSUrlCoder.m */; };
+		3AF4522A1DF3179D00E5DB8D /* NSString+SSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF452061DF3179D00E5DB8D /* NSString+SSUtil.h */; };
+		3AF4522B1DF3179D00E5DB8D /* NSString+SSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF452071DF3179D00E5DB8D /* NSString+SSUtil.m */; };
+		3AF4522C1DF3179D00E5DB8D /* SSBridgeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF452091DF3179D00E5DB8D /* SSBridgeProtocol.h */; };
+		3AF4522D1DF3179D00E5DB8D /* SSEvaluateScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF4520A1DF3179D00E5DB8D /* SSEvaluateScript.h */; };
+		3AF4522E1DF3179D00E5DB8D /* SSMagicMoveSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF4520B1DF3179D00E5DB8D /* SSMagicMoveSet.h */; };
+		3AF4522F1DF3179D00E5DB8D /* SSPageAware.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF4520C1DF3179D00E5DB8D /* SSPageAware.h */; };
+		3AF452301DF3179D00E5DB8D /* SSPageLifeCycle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF4520D1DF3179D00E5DB8D /* SSPageLifeCycle.h */; };
+		3AF452311DF3179D00E5DB8D /* SSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF4520F1DF3179D00E5DB8D /* SSLog.h */; };
+		3AF452321DF3179D00E5DB8D /* SSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF452101DF3179D00E5DB8D /* SSLog.m */; };
+		3AF452331DF3179D00E5DB8D /* SSObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF452111DF3179D00E5DB8D /* SSObjectCache.h */; };
+		3AF452341DF3179D00E5DB8D /* SSObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF452121DF3179D00E5DB8D /* SSObjectCache.m */; };
+		3AF452351DF3179D00E5DB8D /* SSUrlCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF452131DF3179D00E5DB8D /* SSUrlCoder.h */; };
+		3AF452361DF3179D00E5DB8D /* SSUrlCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF452141DF3179D00E5DB8D /* SSUrlCoder.m */; };
+		3AF452381DF318F400E5DB8D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AF452371DF318F400E5DB8D /* Info.plist */; };
+		3AF4523B1DF3191B00E5DB8D /* SSNavigatorFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF4523A1DF3191B00E5DB8D /* SSNavigatorFramework.h */; };
+		3AF4523D1DF319B400E5DB8D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4523C1DF319B400E5DB8D /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,43 +62,43 @@
 		3AF4506E1DF2ECEE00E5DB8D /* SSNavigatorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSNavigatorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF450771DF2ECEF00E5DB8D /* SSNavigatorFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSNavigatorFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF4507C1DF2ECEF00E5DB8D /* SSNavigatorFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNavigatorFrameworkTests.m; sourceTree = "<group>"; };
-		3AF4507E1DF2ECEF00E5DB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AF450DD1DF2F4BB00E5DB8D /* SSMagicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMagicCell.h; sourceTree = "<group>"; };
-		3AF450DE1DF2F4BB00E5DB8D /* SSMagicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMagicCell.m; sourceTree = "<group>"; };
-		3AF450DF1DF2F4BB00E5DB8D /* SSMagicMoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMagicMoveCell.h; sourceTree = "<group>"; };
-		3AF450E01DF2F4BB00E5DB8D /* SSMagicMoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMagicMoveCell.m; sourceTree = "<group>"; };
-		3AF450E11DF2F4BB00E5DB8D /* SSPageAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAnimate.h; sourceTree = "<group>"; };
-		3AF450E21DF2F4BB00E5DB8D /* SSPageAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPageAnimate.m; sourceTree = "<group>"; };
-		3AF450E41DF2F4BB00E5DB8D /* SSNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNavigator.h; sourceTree = "<group>"; };
-		3AF450E51DF2F4BB00E5DB8D /* SSNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNavigator.m; sourceTree = "<group>"; };
-		3AF450E61DF2F4BB00E5DB8D /* SSPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPage.h; sourceTree = "<group>"; };
-		3AF450E71DF2F4BB00E5DB8D /* SSPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPage.m; sourceTree = "<group>"; };
-		3AF450E81DF2F4BB00E5DB8D /* SSWeakify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSWeakify.h; sourceTree = "<group>"; };
-		3AF450E91DF2F4BB00E5DB8D /* SSWebPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSWebPage.h; sourceTree = "<group>"; };
-		3AF450EA1DF2F4BB00E5DB8D /* SSWebPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSWebPage.m; sourceTree = "<group>"; };
-		3AF450EB1DF2F4BB00E5DB8D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AF450ED1DF2F4BB00E5DB8D /* SSBridgeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBridgeHelper.h; sourceTree = "<group>"; };
-		3AF450EE1DF2F4BB00E5DB8D /* SSBridgeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBridgeHelper.m; sourceTree = "<group>"; };
-		3AF450EF1DF2F4BB00E5DB8D /* SSBridgeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBridgeObject.h; sourceTree = "<group>"; };
-		3AF450F01DF2F4BB00E5DB8D /* SSBridgeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBridgeObject.m; sourceTree = "<group>"; };
-		3AF450F11DF2F4BB00E5DB8D /* SSJSPageBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJSPageBridge.h; sourceTree = "<group>"; };
-		3AF450F21DF2F4BB00E5DB8D /* SSJSPageBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSPageBridge.m; sourceTree = "<group>"; };
-		3AF450F41DF2F4BB00E5DB8D /* NSString+SSUrlCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SSUrlCoder.h"; sourceTree = "<group>"; };
-		3AF450F51DF2F4BB00E5DB8D /* NSString+SSUrlCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SSUrlCoder.m"; sourceTree = "<group>"; };
-		3AF450F61DF2F4BB00E5DB8D /* NSString+SSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SSUtil.h"; sourceTree = "<group>"; };
-		3AF450F71DF2F4BB00E5DB8D /* NSString+SSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SSUtil.m"; sourceTree = "<group>"; };
-		3AF450F91DF2F4BB00E5DB8D /* SSBridgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBridgeProtocol.h; sourceTree = "<group>"; };
-		3AF450FA1DF2F4BB00E5DB8D /* SSEvaluateScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEvaluateScript.h; sourceTree = "<group>"; };
-		3AF450FB1DF2F4BB00E5DB8D /* SSMagicMoveSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMagicMoveSet.h; sourceTree = "<group>"; };
-		3AF450FC1DF2F4BB00E5DB8D /* SSPageAware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAware.h; sourceTree = "<group>"; };
-		3AF450FD1DF2F4BB00E5DB8D /* SSPageLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageLifeCycle.h; sourceTree = "<group>"; };
-		3AF450FE1DF2F4BB00E5DB8D /* SSNavigatorFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNavigatorFramework.h; sourceTree = "<group>"; };
-		3AF451001DF2F4BB00E5DB8D /* SSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLog.h; sourceTree = "<group>"; };
-		3AF451011DF2F4BB00E5DB8D /* SSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLog.m; sourceTree = "<group>"; };
-		3AF451021DF2F4BB00E5DB8D /* SSObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSObjectCache.h; sourceTree = "<group>"; };
-		3AF451031DF2F4BB00E5DB8D /* SSObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSObjectCache.m; sourceTree = "<group>"; };
-		3AF451041DF2F4BB00E5DB8D /* SSUrlCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSUrlCoder.h; sourceTree = "<group>"; };
-		3AF451051DF2F4BB00E5DB8D /* SSUrlCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSUrlCoder.m; sourceTree = "<group>"; };
+		3AF451EE1DF3179D00E5DB8D /* SSMagicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMagicCell.h; sourceTree = "<group>"; };
+		3AF451EF1DF3179D00E5DB8D /* SSMagicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMagicCell.m; sourceTree = "<group>"; };
+		3AF451F01DF3179D00E5DB8D /* SSMagicMoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMagicMoveCell.h; sourceTree = "<group>"; };
+		3AF451F11DF3179D00E5DB8D /* SSMagicMoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMagicMoveCell.m; sourceTree = "<group>"; };
+		3AF451F21DF3179D00E5DB8D /* SSPageAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAnimate.h; sourceTree = "<group>"; };
+		3AF451F31DF3179D00E5DB8D /* SSPageAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPageAnimate.m; sourceTree = "<group>"; };
+		3AF451F51DF3179D00E5DB8D /* SSNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNavigator.h; sourceTree = "<group>"; };
+		3AF451F61DF3179D00E5DB8D /* SSNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNavigator.m; sourceTree = "<group>"; };
+		3AF451F71DF3179D00E5DB8D /* SSPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPage.h; sourceTree = "<group>"; };
+		3AF451F81DF3179D00E5DB8D /* SSPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPage.m; sourceTree = "<group>"; };
+		3AF451F91DF3179D00E5DB8D /* SSWeakify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSWeakify.h; sourceTree = "<group>"; };
+		3AF451FA1DF3179D00E5DB8D /* SSWebPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSWebPage.h; sourceTree = "<group>"; };
+		3AF451FB1DF3179D00E5DB8D /* SSWebPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSWebPage.m; sourceTree = "<group>"; };
+		3AF451FD1DF3179D00E5DB8D /* SSBridgeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBridgeHelper.h; sourceTree = "<group>"; };
+		3AF451FE1DF3179D00E5DB8D /* SSBridgeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBridgeHelper.m; sourceTree = "<group>"; };
+		3AF451FF1DF3179D00E5DB8D /* SSBridgeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBridgeObject.h; sourceTree = "<group>"; };
+		3AF452001DF3179D00E5DB8D /* SSBridgeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBridgeObject.m; sourceTree = "<group>"; };
+		3AF452011DF3179D00E5DB8D /* SSJSPageBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJSPageBridge.h; sourceTree = "<group>"; };
+		3AF452021DF3179D00E5DB8D /* SSJSPageBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJSPageBridge.m; sourceTree = "<group>"; };
+		3AF452041DF3179D00E5DB8D /* NSString+SSUrlCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SSUrlCoder.h"; sourceTree = "<group>"; };
+		3AF452051DF3179D00E5DB8D /* NSString+SSUrlCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SSUrlCoder.m"; sourceTree = "<group>"; };
+		3AF452061DF3179D00E5DB8D /* NSString+SSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SSUtil.h"; sourceTree = "<group>"; };
+		3AF452071DF3179D00E5DB8D /* NSString+SSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SSUtil.m"; sourceTree = "<group>"; };
+		3AF452091DF3179D00E5DB8D /* SSBridgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBridgeProtocol.h; sourceTree = "<group>"; };
+		3AF4520A1DF3179D00E5DB8D /* SSEvaluateScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSEvaluateScript.h; sourceTree = "<group>"; };
+		3AF4520B1DF3179D00E5DB8D /* SSMagicMoveSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMagicMoveSet.h; sourceTree = "<group>"; };
+		3AF4520C1DF3179D00E5DB8D /* SSPageAware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageAware.h; sourceTree = "<group>"; };
+		3AF4520D1DF3179D00E5DB8D /* SSPageLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPageLifeCycle.h; sourceTree = "<group>"; };
+		3AF4520F1DF3179D00E5DB8D /* SSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLog.h; sourceTree = "<group>"; };
+		3AF452101DF3179D00E5DB8D /* SSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLog.m; sourceTree = "<group>"; };
+		3AF452111DF3179D00E5DB8D /* SSObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSObjectCache.h; sourceTree = "<group>"; };
+		3AF452121DF3179D00E5DB8D /* SSObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSObjectCache.m; sourceTree = "<group>"; };
+		3AF452131DF3179D00E5DB8D /* SSUrlCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSUrlCoder.h; sourceTree = "<group>"; };
+		3AF452141DF3179D00E5DB8D /* SSUrlCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSUrlCoder.m; sourceTree = "<group>"; };
+		3AF452371DF318F400E5DB8D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF4523A1DF3191B00E5DB8D /* SSNavigatorFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNavigatorFramework.h; sourceTree = "<group>"; };
+		3AF4523C1DF319B400E5DB8D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +123,13 @@
 		3AF450641DF2ECEE00E5DB8D = {
 			isa = PBXGroup;
 			children = (
-				3AF450DB1DF2F4BB00E5DB8D /* SSNavigatorFramework */,
+				3AF451ED1DF3179D00E5DB8D /* Animation */,
+				3AF451F41DF3179D00E5DB8D /* Core */,
+				3AF451FC1DF3179D00E5DB8D /* JSBridge */,
+				3AF452031DF3179D00E5DB8D /* NSStringCategory */,
+				3AF452081DF3179D00E5DB8D /* Protocol */,
+				3AF4520E1DF3179D00E5DB8D /* Util */,
+				3AF452391DF3190400E5DB8D /* Other */,
 				3AF4507B1DF2ECEF00E5DB8D /* SSNavigatorFrameworkTests */,
 				3AF4506F1DF2ECEE00E5DB8D /* Products */,
 			);
@@ -140,109 +147,95 @@
 		3AF4507B1DF2ECEF00E5DB8D /* SSNavigatorFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				3AF4523C1DF319B400E5DB8D /* Info.plist */,
 				3AF4507C1DF2ECEF00E5DB8D /* SSNavigatorFrameworkTests.m */,
-				3AF4507E1DF2ECEF00E5DB8D /* Info.plist */,
 			);
 			path = SSNavigatorFrameworkTests;
 			sourceTree = "<group>";
 		};
-		3AF450DB1DF2F4BB00E5DB8D /* SSNavigatorFramework */ = {
+		3AF451ED1DF3179D00E5DB8D /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				3AF450E31DF2F4BB00E5DB8D /* Core */,
-				3AF450DC1DF2F4BB00E5DB8D /* Animation */,
-				3AF450EC1DF2F4BB00E5DB8D /* JSBridge */,
-				3AF450F31DF2F4BB00E5DB8D /* NSStringCategory */,
-				3AF450F81DF2F4BB00E5DB8D /* Protocol */,
-				3AF450FF1DF2F4BB00E5DB8D /* Util */,
-				3AF4512A1DF2F52200E5DB8D /* Framework */,
-			);
-			path = SSNavigatorFramework;
-			sourceTree = "<group>";
-		};
-		3AF450DC1DF2F4BB00E5DB8D /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				3AF450DD1DF2F4BB00E5DB8D /* SSMagicCell.h */,
-				3AF450DE1DF2F4BB00E5DB8D /* SSMagicCell.m */,
-				3AF450DF1DF2F4BB00E5DB8D /* SSMagicMoveCell.h */,
-				3AF450E01DF2F4BB00E5DB8D /* SSMagicMoveCell.m */,
-				3AF450E11DF2F4BB00E5DB8D /* SSPageAnimate.h */,
-				3AF450E21DF2F4BB00E5DB8D /* SSPageAnimate.m */,
+				3AF451EE1DF3179D00E5DB8D /* SSMagicCell.h */,
+				3AF451EF1DF3179D00E5DB8D /* SSMagicCell.m */,
+				3AF451F01DF3179D00E5DB8D /* SSMagicMoveCell.h */,
+				3AF451F11DF3179D00E5DB8D /* SSMagicMoveCell.m */,
+				3AF451F21DF3179D00E5DB8D /* SSPageAnimate.h */,
+				3AF451F31DF3179D00E5DB8D /* SSPageAnimate.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
 		};
-		3AF450E31DF2F4BB00E5DB8D /* Core */ = {
+		3AF451F41DF3179D00E5DB8D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				3AF450E41DF2F4BB00E5DB8D /* SSNavigator.h */,
-				3AF450E51DF2F4BB00E5DB8D /* SSNavigator.m */,
-				3AF450E61DF2F4BB00E5DB8D /* SSPage.h */,
-				3AF450E71DF2F4BB00E5DB8D /* SSPage.m */,
-				3AF450E81DF2F4BB00E5DB8D /* SSWeakify.h */,
-				3AF450E91DF2F4BB00E5DB8D /* SSWebPage.h */,
-				3AF450EA1DF2F4BB00E5DB8D /* SSWebPage.m */,
+				3AF451F51DF3179D00E5DB8D /* SSNavigator.h */,
+				3AF451F61DF3179D00E5DB8D /* SSNavigator.m */,
+				3AF451F71DF3179D00E5DB8D /* SSPage.h */,
+				3AF451F81DF3179D00E5DB8D /* SSPage.m */,
+				3AF451F91DF3179D00E5DB8D /* SSWeakify.h */,
+				3AF451FA1DF3179D00E5DB8D /* SSWebPage.h */,
+				3AF451FB1DF3179D00E5DB8D /* SSWebPage.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		3AF450EC1DF2F4BB00E5DB8D /* JSBridge */ = {
+		3AF451FC1DF3179D00E5DB8D /* JSBridge */ = {
 			isa = PBXGroup;
 			children = (
-				3AF450ED1DF2F4BB00E5DB8D /* SSBridgeHelper.h */,
-				3AF450EE1DF2F4BB00E5DB8D /* SSBridgeHelper.m */,
-				3AF450EF1DF2F4BB00E5DB8D /* SSBridgeObject.h */,
-				3AF450F01DF2F4BB00E5DB8D /* SSBridgeObject.m */,
-				3AF450F11DF2F4BB00E5DB8D /* SSJSPageBridge.h */,
-				3AF450F21DF2F4BB00E5DB8D /* SSJSPageBridge.m */,
+				3AF451FD1DF3179D00E5DB8D /* SSBridgeHelper.h */,
+				3AF451FE1DF3179D00E5DB8D /* SSBridgeHelper.m */,
+				3AF451FF1DF3179D00E5DB8D /* SSBridgeObject.h */,
+				3AF452001DF3179D00E5DB8D /* SSBridgeObject.m */,
+				3AF452011DF3179D00E5DB8D /* SSJSPageBridge.h */,
+				3AF452021DF3179D00E5DB8D /* SSJSPageBridge.m */,
 			);
 			path = JSBridge;
 			sourceTree = "<group>";
 		};
-		3AF450F31DF2F4BB00E5DB8D /* NSStringCategory */ = {
+		3AF452031DF3179D00E5DB8D /* NSStringCategory */ = {
 			isa = PBXGroup;
 			children = (
-				3AF450F41DF2F4BB00E5DB8D /* NSString+SSUrlCoder.h */,
-				3AF450F51DF2F4BB00E5DB8D /* NSString+SSUrlCoder.m */,
-				3AF450F61DF2F4BB00E5DB8D /* NSString+SSUtil.h */,
-				3AF450F71DF2F4BB00E5DB8D /* NSString+SSUtil.m */,
+				3AF452041DF3179D00E5DB8D /* NSString+SSUrlCoder.h */,
+				3AF452051DF3179D00E5DB8D /* NSString+SSUrlCoder.m */,
+				3AF452061DF3179D00E5DB8D /* NSString+SSUtil.h */,
+				3AF452071DF3179D00E5DB8D /* NSString+SSUtil.m */,
 			);
 			path = NSStringCategory;
 			sourceTree = "<group>";
 		};
-		3AF450F81DF2F4BB00E5DB8D /* Protocol */ = {
+		3AF452081DF3179D00E5DB8D /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				3AF450F91DF2F4BB00E5DB8D /* SSBridgeProtocol.h */,
-				3AF450FA1DF2F4BB00E5DB8D /* SSEvaluateScript.h */,
-				3AF450FB1DF2F4BB00E5DB8D /* SSMagicMoveSet.h */,
-				3AF450FC1DF2F4BB00E5DB8D /* SSPageAware.h */,
-				3AF450FD1DF2F4BB00E5DB8D /* SSPageLifeCycle.h */,
+				3AF452091DF3179D00E5DB8D /* SSBridgeProtocol.h */,
+				3AF4520A1DF3179D00E5DB8D /* SSEvaluateScript.h */,
+				3AF4520B1DF3179D00E5DB8D /* SSMagicMoveSet.h */,
+				3AF4520C1DF3179D00E5DB8D /* SSPageAware.h */,
+				3AF4520D1DF3179D00E5DB8D /* SSPageLifeCycle.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		3AF450FF1DF2F4BB00E5DB8D /* Util */ = {
+		3AF4520E1DF3179D00E5DB8D /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				3AF451001DF2F4BB00E5DB8D /* SSLog.h */,
-				3AF451011DF2F4BB00E5DB8D /* SSLog.m */,
-				3AF451021DF2F4BB00E5DB8D /* SSObjectCache.h */,
-				3AF451031DF2F4BB00E5DB8D /* SSObjectCache.m */,
-				3AF451041DF2F4BB00E5DB8D /* SSUrlCoder.h */,
-				3AF451051DF2F4BB00E5DB8D /* SSUrlCoder.m */,
+				3AF4520F1DF3179D00E5DB8D /* SSLog.h */,
+				3AF452101DF3179D00E5DB8D /* SSLog.m */,
+				3AF452111DF3179D00E5DB8D /* SSObjectCache.h */,
+				3AF452121DF3179D00E5DB8D /* SSObjectCache.m */,
+				3AF452131DF3179D00E5DB8D /* SSUrlCoder.h */,
+				3AF452141DF3179D00E5DB8D /* SSUrlCoder.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
 		};
-		3AF4512A1DF2F52200E5DB8D /* Framework */ = {
+		3AF452391DF3190400E5DB8D /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3AF450EB1DF2F4BB00E5DB8D /* Info.plist */,
-				3AF450FE1DF2F4BB00E5DB8D /* SSNavigatorFramework.h */,
+				3AF4523A1DF3191B00E5DB8D /* SSNavigatorFramework.h */,
+				3AF452371DF318F400E5DB8D /* Info.plist */,
 			);
-			name = Framework;
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,27 +245,27 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF451221DF2F4BB00E5DB8D /* SSPageLifeCycle.h in Headers */,
-				3AF4510C1DF2F4BB00E5DB8D /* SSNavigator.h in Headers */,
-				3AF4511E1DF2F4BB00E5DB8D /* SSBridgeProtocol.h in Headers */,
-				3AF451141DF2F4BB00E5DB8D /* SSBridgeHelper.h in Headers */,
-				3AF451111DF2F4BB00E5DB8D /* SSWebPage.h in Headers */,
-				3AF451231DF2F4BB00E5DB8D /* SSNavigatorFramework.h in Headers */,
-				3AF4510E1DF2F4BB00E5DB8D /* SSPage.h in Headers */,
-				3AF4511C1DF2F4BB00E5DB8D /* NSString+SSUtil.h in Headers */,
-				3AF451101DF2F4BB00E5DB8D /* SSWeakify.h in Headers */,
-				3AF451201DF2F4BB00E5DB8D /* SSMagicMoveSet.h in Headers */,
-				3AF451241DF2F4BB00E5DB8D /* SSLog.h in Headers */,
-				3AF4511A1DF2F4BB00E5DB8D /* NSString+SSUrlCoder.h in Headers */,
-				3AF451161DF2F4BB00E5DB8D /* SSBridgeObject.h in Headers */,
-				3AF451281DF2F4BB00E5DB8D /* SSUrlCoder.h in Headers */,
-				3AF4511F1DF2F4BB00E5DB8D /* SSEvaluateScript.h in Headers */,
-				3AF451181DF2F4BB00E5DB8D /* SSJSPageBridge.h in Headers */,
-				3AF451261DF2F4BB00E5DB8D /* SSObjectCache.h in Headers */,
-				3AF451061DF2F4BB00E5DB8D /* SSMagicCell.h in Headers */,
-				3AF451211DF2F4BB00E5DB8D /* SSPageAware.h in Headers */,
-				3AF451081DF2F4BB00E5DB8D /* SSMagicMoveCell.h in Headers */,
-				3AF4510A1DF2F4BB00E5DB8D /* SSPageAnimate.h in Headers */,
+				3AF4523B1DF3191B00E5DB8D /* SSNavigatorFramework.h in Headers */,
+				3AF4522D1DF3179D00E5DB8D /* SSEvaluateScript.h in Headers */,
+				3AF452301DF3179D00E5DB8D /* SSPageLifeCycle.h in Headers */,
+				3AF4521B1DF3179D00E5DB8D /* SSNavigator.h in Headers */,
+				3AF4522C1DF3179D00E5DB8D /* SSBridgeProtocol.h in Headers */,
+				3AF452261DF3179D00E5DB8D /* SSJSPageBridge.h in Headers */,
+				3AF452221DF3179D00E5DB8D /* SSBridgeHelper.h in Headers */,
+				3AF452151DF3179D00E5DB8D /* SSMagicCell.h in Headers */,
+				3AF4522F1DF3179D00E5DB8D /* SSPageAware.h in Headers */,
+				3AF452201DF3179D00E5DB8D /* SSWebPage.h in Headers */,
+				3AF452311DF3179D00E5DB8D /* SSLog.h in Headers */,
+				3AF452331DF3179D00E5DB8D /* SSObjectCache.h in Headers */,
+				3AF4521D1DF3179D00E5DB8D /* SSPage.h in Headers */,
+				3AF452351DF3179D00E5DB8D /* SSUrlCoder.h in Headers */,
+				3AF4522A1DF3179D00E5DB8D /* NSString+SSUtil.h in Headers */,
+				3AF4521F1DF3179D00E5DB8D /* SSWeakify.h in Headers */,
+				3AF4522E1DF3179D00E5DB8D /* SSMagicMoveSet.h in Headers */,
+				3AF452171DF3179D00E5DB8D /* SSMagicMoveCell.h in Headers */,
+				3AF452281DF3179D00E5DB8D /* NSString+SSUrlCoder.h in Headers */,
+				3AF452241DF3179D00E5DB8D /* SSBridgeObject.h in Headers */,
+				3AF452191DF3179D00E5DB8D /* SSPageAnimate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF451131DF2F4BB00E5DB8D /* Info.plist in Resources */,
+				3AF452381DF318F400E5DB8D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF4523D1DF319B400E5DB8D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,20 +369,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF451151DF2F4BB00E5DB8D /* SSBridgeHelper.m in Sources */,
-				3AF451091DF2F4BB00E5DB8D /* SSMagicMoveCell.m in Sources */,
-				3AF4510D1DF2F4BB00E5DB8D /* SSNavigator.m in Sources */,
-				3AF451271DF2F4BB00E5DB8D /* SSObjectCache.m in Sources */,
-				3AF4511B1DF2F4BB00E5DB8D /* NSString+SSUrlCoder.m in Sources */,
-				3AF4510F1DF2F4BB00E5DB8D /* SSPage.m in Sources */,
-				3AF451121DF2F4BB00E5DB8D /* SSWebPage.m in Sources */,
-				3AF451251DF2F4BB00E5DB8D /* SSLog.m in Sources */,
-				3AF451171DF2F4BB00E5DB8D /* SSBridgeObject.m in Sources */,
-				3AF451291DF2F4BB00E5DB8D /* SSUrlCoder.m in Sources */,
-				3AF451191DF2F4BB00E5DB8D /* SSJSPageBridge.m in Sources */,
-				3AF451071DF2F4BB00E5DB8D /* SSMagicCell.m in Sources */,
-				3AF4510B1DF2F4BB00E5DB8D /* SSPageAnimate.m in Sources */,
-				3AF4511D1DF2F4BB00E5DB8D /* NSString+SSUtil.m in Sources */,
+				3AF452231DF3179D00E5DB8D /* SSBridgeHelper.m in Sources */,
+				3AF452181DF3179D00E5DB8D /* SSMagicMoveCell.m in Sources */,
+				3AF4521C1DF3179D00E5DB8D /* SSNavigator.m in Sources */,
+				3AF452341DF3179D00E5DB8D /* SSObjectCache.m in Sources */,
+				3AF452291DF3179D00E5DB8D /* NSString+SSUrlCoder.m in Sources */,
+				3AF4521E1DF3179D00E5DB8D /* SSPage.m in Sources */,
+				3AF452211DF3179D00E5DB8D /* SSWebPage.m in Sources */,
+				3AF452321DF3179D00E5DB8D /* SSLog.m in Sources */,
+				3AF452251DF3179D00E5DB8D /* SSBridgeObject.m in Sources */,
+				3AF452361DF3179D00E5DB8D /* SSUrlCoder.m in Sources */,
+				3AF452271DF3179D00E5DB8D /* SSJSPageBridge.m in Sources */,
+				3AF452161DF3179D00E5DB8D /* SSMagicCell.m in Sources */,
+				3AF4521A1DF3179D00E5DB8D /* SSPageAnimate.m in Sources */,
+				3AF4522B1DF3179D00E5DB8D /* NSString+SSUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +509,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/SSNavigatorFramework/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -534,7 +528,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/SSNavigatorFramework/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -548,6 +542,7 @@
 		3AF450861DF2ECEF00E5DB8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SSNavigatorFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SH.SSNavigatorFrameworkTests;
@@ -558,6 +553,7 @@
 		3AF450871DF2ECEF00E5DB8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SSNavigatorFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SH.SSNavigatorFrameworkTests;
