@@ -11,10 +11,16 @@
 @implementation NSString (SSUrlCoder)
 
 - (NSString *)ssEncodeUrl {
+    if (!self) {
+        return @"";
+    }
     return [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
 
 - (NSString *)ssDecodeUrl {
+    if (!self) {
+        return @"";
+    }
     return self.stringByRemovingPercentEncoding;
 }
 @end

@@ -118,6 +118,20 @@ SSLogDefine(SSNavigator)
     return sharedInstance;
 }
 
+- (instancetype)init {
+    if(self = [super init]) {
+        self = [SSNavigator sharedInstance];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        self = [SSNavigator sharedInstance];
+    }
+    return self;
+}
+
 - (void)loadView {
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -484,6 +498,10 @@ SSLogDefine(SSNavigator)
 }
 
 #pragma mark - protocol method
+- (SSPage *)topPage {
+    return [self.pageStack lastObject].pageInstance;
+}
+
 -(SSPage *)topPage:(int)deep {
     return [self topPageHolder:deep].pageInstance;
 }
@@ -513,10 +531,6 @@ SSLogDefine(SSNavigator)
         _pageFlowStack = [NSMutableArray new];
     }
     return _pageFlowStack;
-}
-
-- (SSPage *)topPage {
-    return [self.pageStack lastObject].pageInstance;
 }
 
 #pragma mark class getter

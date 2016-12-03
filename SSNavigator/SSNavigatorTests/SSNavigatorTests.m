@@ -27,8 +27,10 @@
 }
 
 - (void)testUrlCoder {
-    NSArray *urlArray = @[@"app://li&我", @"", @"app://test?abc"];
-    NSArray *codedArray = @[@"app://li&%E6%88%91", @"", @"app://test?abc"];
+    NSString *nilStr = nil;
+    NSString *str = [NSString stringWithFormat:@"%@", nilStr];
+    NSArray *urlArray = @[@"app://li&我", @"", @"app://test?abc", str];
+    NSArray *codedArray = @[@"app://li&%E6%88%91", @"", @"app://test?abc", @"(null)"];
     for (NSInteger i = 0; i < urlArray.count; i++) {
         NSLog(@"index:%ld", i);
         NSLog(@"encode:%@", [urlArray[i] ssEncodeUrl]);

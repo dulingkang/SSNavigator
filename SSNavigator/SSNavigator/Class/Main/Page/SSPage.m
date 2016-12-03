@@ -23,6 +23,7 @@
 @synthesize frameworkParams;
 @synthesize pageUrl;
 @synthesize pageName;
+@synthesize needPopflow;
 
 SSLogDefine(SSPage)
 
@@ -57,28 +58,36 @@ SSLogDefine(SSPage)
 
 #pragma mark - public method
 -(void)forward:(NSString *)url {
-    if (self != self.navigator.topPage) {
-        
-    }
+    if ([self judgeSelfIsNotTopPage]) return ;
+    [self.navigator forward:url];
 }
 
--(void)forward:(NSString *)url callback:(void(^)(NSDictionary *dict))callback {
+-(void)forward:(NSString *)url callback:(SSDictCallBack)callback {
+    if ([self judgeSelfIsNotTopPage]) return ;
+    [self.navigator forward:url callback:callback];
 }
 
 -(void)backward {
+    if ([self judgeSelfIsNotTopPage]) return ;
+    [self.navigator backward];
 }
 
 -(void)backward:(NSString *)param {
+    if ([self judgeSelfIsNotTopPage]) return ;
+    [self.navigator backward:param];
 }
 
 -(void)callback:(NSString *)param {
+    if ([self judgeSelfIsNotTopPage]) return ;
+    [self.navigator callback:param];
 }
 
 -(void)pushFlow {
+    if ([self judgeSelfIsNotTopPage]) return ;
+    [self.navigator pushFlow];
 }
 
--(void)popFlow:(NSString *)param {
-}
+-(NSDictionary *) magicMoveSet {return nil;}
 
 - (void)warePageParam:(NSString*)value byKey:(NSString*)key {
     NSString* setterName = [NSString stringWithFormat:@"set%@:", [key ssFirstToUpper]];
@@ -102,4 +111,12 @@ SSLogDefine(SSPage)
     SSDebug(@"%@ --> %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd))
 }
 
+#pragma mark - private method
+- (BOOL)judgeSelfIsNotTopPage {
+    if (self != self.navigator.topPage) {
+        SSDebug(@"self class is:%@, not equal topPage class:%@", NSStringFromClass(self.class),NSStringFromClass(self.navigator.topPage.class));
+        return true;
+    }
+    return false;
+}
 @end

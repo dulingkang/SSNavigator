@@ -10,6 +10,7 @@
 
 typedef void (^SSDictCallBack)(NSDictionary *dict);
 @class SSPage;
+
 @protocol SSNavigatorDelegate <NSObject>
 @optional
 - (void)navigatorWillChangePageTo:(NSString *)url;
@@ -21,15 +22,23 @@ typedef void (^SSDictCallBack)(NSDictionary *dict);
 
 @interface SSNavigator : UIViewController
 @property (nonatomic, weak) id<SSNavigatorDelegate> delegate;
-@property (nonatomic, strong) SSPage *topPage; //栈顶页面对象
 + (SSNavigator *)sharedInstance;
+- (instancetype)init;
+- (instancetype)initWithCoder:(NSCoder *)aDecoder;
 
 /*!
  *  返回栈顶页面对象
  *
  *  @return 栈顶页面对象
  */
-- (SSPage*)topPage:(int)deep;
+-(SSPage *)topPage;
+
+/*!
+ *  返回栈顶页面对象
+ *
+ *  @return 栈顶页面对象
+ */
+- (SSPage *)topPage:(int)deep;
 
 /*!
  * 将当期页面滚动到顶部

@@ -32,16 +32,6 @@
     [super pageWillBeShown];
     [[SSBridgeHelper sharedInstance] registBridge:self.jsPageBridge];
     [[SSBridgeHelper sharedInstance] bindWebView:self.webView];
-}
-
-- (void)pageDestroy {
-    [super pageDestroy];
-    [self.webView stopLoading];
-    self.webView = nil;
-}
-
-- (void)pageWillForwardToMe {
-    [super pageWillForwardToMe];
     NSString *pageUrl = self.pageUrl;
     NSURL *url = nil;
     if ([pageUrl rangeOfString:@"file://"].location == 0) {
@@ -56,6 +46,11 @@
         NSURLRequest *request = [NSURLRequest requestWithURL:url] ;
         [self.webView loadRequest:request];
     }
+}
+
+- (void)dealloc {
+    [self.webView stopLoading];
+    self.webView = nil;
 }
 
 #pragma mark - evaluate script protocol

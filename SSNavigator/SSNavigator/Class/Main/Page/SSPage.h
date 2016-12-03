@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "SSPageLifeCircle.h"
 #import "SSPageAware.h"
+#import "SSMagicMoveSet.h"
+#import "SSNavigator.h"
 
-@interface SSPage : UIViewController<SSPageAware, SSPageLifeCircle>
+@interface SSPage : UIViewController<SSPageAware, SSPageLifeCircle, SSMagicMoveSet>
 -(void)forward:(NSString *)url;
--(void)forward:(NSString *)url callback:(void(^)(NSDictionary *dict))callback;
+-(void)forward:(NSString *)url callback:(SSDictCallBack)callback;
 -(void)backward;
 
 /**
@@ -25,7 +27,6 @@
 -(void)backward:(NSString *)param;
 -(void)callback:(NSString *)param;
 -(void)pushFlow;
--(void)popFlow:(NSString *)param;
 
 -(void)warePageParam:(NSString*)value byKey:(NSString*)key;
 -(void)pageRollup;
