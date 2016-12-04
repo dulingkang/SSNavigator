@@ -118,19 +118,19 @@ SSLogDefine(SSNavigator)
     return sharedInstance;
 }
 
-- (instancetype)init {
-    if(self = [super init]) {
-        self = [SSNavigator sharedInstance];
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super initWithCoder:aDecoder]) {
-        self = [SSNavigator sharedInstance];
-    }
-    return self;
-}
+//- (instancetype)init {
+//    if(self = [super init]) {
+//        self = [SSNavigator sharedInstance];
+//    }
+//    return self;
+//}
+//
+//- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+//    if (self = [super initWithCoder:aDecoder]) {
+//        self = [SSNavigator sharedInstance];
+//    }
+//    return self;
+//}
 
 - (void)loadView {
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -157,16 +157,16 @@ SSLogDefine(SSNavigator)
 }
 
 - (void)forward:(NSString *)url callback:(SSDictCallBack)callback {
-    if (!url || url.length == 0) {
-        return ;
-    }
-    _info = [SSUrlCoder decodeUrl:url];
-    NSString* redirectUrlPath = [[SSNavigator pageRedirectRegistry] objectForKey:_info.urlPath];
-    if (redirectUrlPath != nil) {
-        url = [NSString stringWithFormat:@"%@%@",redirectUrlPath,[url substringFromIndex:_info.urlPath.length]];
+//    dispatch_main_async_safe(^{
+        if (!url || url.length == 0) {
+            return ;
+        }
         _info = [SSUrlCoder decodeUrl:url];
-    }
-    dispatch_main_async_safe(^{
+//        NSString* redirectUrlPath = [[SSNavigator pageRedirectRegistry] objectForKey:_info.urlPath];
+//        if (redirectUrlPath != nil) {
+//            NSString *redirectUrl = [NSString stringWithFormat:@"%@%@",redirectUrlPath,[url substringFromIndex:_info.urlPath.length]];
+//            _info = [SSUrlCoder decodeUrl:redirectUrl];
+//        }
         if (self.delegate && [self.delegate respondsToSelector:@selector(navigatorShouldForwardTo:)]) {
             if (![self.delegate navigatorShouldForwardTo:url]) {
                 SSDebug(@"Navigator should not forward to url according to delegate : %@",url);
@@ -178,7 +178,7 @@ SSLogDefine(SSNavigator)
             return ;
         }
         [self forwardMainLogic:url forwardType:SSForward callback:callback];
-    });
+//    });
 }
 
 - (void)backward {
@@ -307,31 +307,31 @@ SSLogDefine(SSNavigator)
         if (cls) {
             SSDebug(@"Navigator will use custom class: '%@',url: '%@'", NSStringFromClass(cls), url);
         }
-        if (!cls) {
-            if ([@"app" isEqualToString:_info.protocol]) {
-                cls = [[SSNavigator pageRegistry] objectForKey:[_info.appPageName lowercaseString]];
-                if (!cls) {
-                    cls = NSClassFromString(_info.appPageName);
-                }
-            } else if([@"http" isEqualToString:_info.protocol]
-                      || [@"https" isEqualToString:_info.protocol]
-                      || [@"file" isEqualToString:_info.protocol]
-                      ) {
-                cls = [SSWebPage class];
+    }
+    if (!cls) {
+        if ([@"app" isEqualToString:_info.protocol]) {
+            cls = [[SSNavigator pageRegistry] objectForKey:[_info.appPageName lowercaseString]];
+            if (!cls) {
+                cls = NSClassFromString(_info.appPageName);
             }
+        } else if([@"http" isEqualToString:_info.protocol]
+                  || [@"https" isEqualToString:_info.protocol]
+                  || [@"file" isEqualToString:_info.protocol]
+                  ) {
+            cls = [SSWebPage class];
         }
-        if (cls) {
-            if (self.delegate != nil && [self.delegate respondsToSelector:@selector(navigatorShouldCachePage:)] && [self.delegate navigatorShouldCachePage:url]) {
-                page = [self.pageCache objectForKey:NSStringFromClass(cls)];
-            }
-            if (!page) {
-                page = [[cls alloc] init];
-            } else {
-                [self.pageCache remove:NSStringFromClass(cls)];
-            }
-            if ([page respondsToSelector:@selector(setNavigator:)]) {
-                [((id<SSPageAware>)page) setNavigator:self];
-            }
+    }
+    if (cls) {
+        if (self.delegate != nil && [self.delegate respondsToSelector:@selector(navigatorShouldCachePage:)] && [self.delegate navigatorShouldCachePage:url]) {
+            page = [self.pageCache objectForKey:NSStringFromClass(cls)];
+        }
+        if (!page) {
+            page = [[cls alloc] init];
+        } else {
+            [self.pageCache remove:NSStringFromClass(cls)];
+        }
+        if ([page respondsToSelector:@selector(setNavigator:)]) {
+            [((id<SSPageAware>)page) setNavigator:self];
         }
     }
     return page;

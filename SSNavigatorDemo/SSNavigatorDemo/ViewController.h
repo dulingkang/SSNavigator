@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SSNavigatorFramework/SSNavigator.h>
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) SSNavigator *navigator;
 
 @end
 
