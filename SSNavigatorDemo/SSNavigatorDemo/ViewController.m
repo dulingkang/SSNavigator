@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view addSubview:self.navigator.view];
     [self addTest1Button];
 }
 
@@ -47,7 +48,6 @@
 - (SSNavigator *)navigator {
     if (!_navigator) {
         _navigator = [SSNavigator sharedInstance];
-        _navigator.delegate = self;
     }
     return _navigator;
 }
